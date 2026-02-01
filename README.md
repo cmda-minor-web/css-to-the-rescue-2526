@@ -1,2 +1,4 @@
-# css-to-the-rescue-2526
-Minor WDD - CSS to the Rescue-2526
+# CSS to the Rescue @cmda-minor-web 2025/26
+
+
+- Samples voor final assignment → [Samples & Pointers](index.html)  

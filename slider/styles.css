@@ -1,0 +1,52 @@
+@layer remedy, default, demo;
+
+
+
+@layer demo {
+	body {
+		/* in this example the custom properties are used to change the background-color */
+		/* the fallback values are present in case the script delays or fails */
+		background-color: hsl(
+			calc(360 * var(--hue, .9)) 
+			calc(100% * var(--saturation, 1)) 
+			calc(100% * var(--lightness, .5)) 
+		);
+	}
+}
+
+
+
+@layer default {
+	body {
+		height:100dvh;
+		margin:0;
+		
+		display:grid;
+		place-content:center;
+		place-items:center;
+	}
+	
+	h1 {
+		line-height:1.2;
+		max-width:15ch;
+		text-align:center;
+	}
+	
+	label {
+		display:inline-flex;
+		align-items:center;
+	}
+
+	* {
+		accent-color:black;
+	}
+}
+
+
+
+@layer remedy {
+	*, *::before, *::after {
+		box-sizing:border-box;
+		font-family: Saira, sans-serif;
+	}
+}

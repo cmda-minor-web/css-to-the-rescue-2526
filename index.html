@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Nils, Roel and Sanne">
+
+  <title>Samples - CSS to the Rescue 2024/25 - Minor WDD</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Saira:wght@100;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+</head>
+
+<body>
+
+  <header>
+    <h1>CSS to the Rescue&nbsp;<span><span>25/</span></span>26</h1>
+
+    <form>
+      <label>
+        <input type="checkbox" name="party-pooper"> 
+        <span>party pooper <span>mode</span></span>
+      </label>
+    </form>
+  </header>
+
+  <main>
+    <header>
+      <h2>Code samples and pointers for the final assignment</h2>
+    </header>
+
+    <!--High-def colors-->
+    <details id="sessie-colors">
+      <summary aria-label="meer over high-def colors">
+        <h3>High-def colors</h3>
+        <p><strong>High-end schermen</strong> kunnen mooiere kleuren weergeven dan RGB kan definiëren. Gelukkig biedt CSS nu allerhande opties om die <strong>mooie kleuren</strong> wel te benutten.</p>
+      </summary>
+
+      <div class="details-content">
+
+        <h4>Samples</h4>
+        <ul>
+          <li><a href="https://codepen.io/shooft/live/RwOagqp">sRGB vs display-P3 kleuren</a> (CodePen)</li>
+          <li><a href="https://codepen.io/shooft/live/qBwZjwb">HSL vs okLCH kleuren</a> (CodePen)</li>
+          <li><a href="https://codepen.io/shooft/live/VwNaWVK">sRGB vs okLCH gradients</a> (CodePen)</li>
+        </ul>
+
+        <h4>Oefenen</h4>
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/OJGNgeQ">sRGB, display-p3, okLCH en meer</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/QWPNgYB">sRGB, display-p3, okLCH en meer</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/NWmNvKB">mooie gradients</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/KKYzqjb">mooie gradients</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/rNbezMa">color-mix()</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/RwOaZwZ">color-mix()</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/BaEKdYG">relative color syntax</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/mdgPMMx">relative color syntax</a> (CodePen)
+          </li>
+        </ul>
+
+
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://developer.chrome.com/docs/css-ui/high-definition-css-color-guide">High Definition CSS Color Guide</a> van Adam Argyle (developer.chrome.com)</li>
+          <li><a href="https://webkit.org/blog/10042/wide-gamut-color-in-css-with-display-p3/">Display-P3 colors</a> van Nikita Vasilyev (WebKit)</li>
+          <li><a href="https://lea.verou.me/blog/2020/04/lch-colors-in-css-what-why-and-how/">LCH: what, why, and how?</a> (van Lea Verou)</li>
+          <li><a href="https://oklch.com/">OKLCH Color Picker & Converter</a> van Evil Martians</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/hue-interpolation-method#shorter">hue-interpolation-method</a> (MDN)</li>
+        </ul>
+
+        <ul>
+          <li><a href="https://developer.chrome.com/docs/css-ui/css-color-mix">color-mix()</a> van Adam Argyle (developer.chrome.com)</li>
+          <li><a href="https://developer.chrome.com/blog/css-relative-color-syntax">relative color syntax</a> van Adam Argyle (developer.chrome.com)</li>
+        </ul>
+
+        <h4>Schetsen</h4>
+        <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
+        <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
+
+      </div>
+    </details>
+    
+    <!--:has()-->
+    <details id="sessie-has">
+      <summary aria-label="meer over :has()"><h3>:has()</h3>
+        <p>De <strong>parent selector</strong> en zo veel meer. Zo <strong>nieuw</strong> dat de totale kracht nog niet ontbolsterd is - maar nu al zo mooi.</p>
+      </summary>
+
+      <div class="details-content">
+
+        <h4>Oefenen</h4>
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/LYvVjmX">:has() yourself</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/MWRwvro">:has() yourself</a> (CodePen)
+          </li>
+        </ul>
+        
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/Exexevo">:has() als parent selector</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/NWLWLdP">:has() als parent selector</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/ExexeeL">:has() als next sibling</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/bGxGxaV">:has() als next sibling</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/NWmqwVQ">:has() met voor en na</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/gOypXQB">:has() met voor en na</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/xxeGPxw">:has() met radio buttons</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/YzMXrdp">:has() met radio buttons</a> (CodePen)
+          </li>
+        </ul>
+        
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/jOvOeYz">:has() met checkboxes</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/zYJYmGJ">:has() met checkboxes</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/VwGwENK">:has() met dropdown</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/QWVWZrm">:has() met dropdown</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/abxOVBN">:has() met een form</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/JjVdOXK">:has() met een form</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/gOypGdR">:has() en hoeveelheden</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/XWQbedx">:has() en hoeveelheden</a> (CodePen)
+          </li>
+        </ul>
+        
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/vYzYQbj">:has() en :not()</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/RwYwezp">:has() en :not()</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/YzMXEve">:has() met color schemes</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/PogqOWe">:has() met color schemes</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/YzMXEEE">:has() met color schemes met style queries</a> (CodePen)
+          </li>
+        </ul>
+
+
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://www.matuzo.at/blog/2022/100daysof-day6/">:has() intro</a> van Manuel Matuzović</li>
+          <li><a href="https://ishadeed.com/article/css-has-guide?utm_source=CSS-Weekly&utm_medium=newsletter&utm_campaign=issue-580-february-28-2024">:has() Interactive Guide</a> van Ahmad Shadeed</li>
+          <!-- <li><a href="https://webkit.org/blog/13096/css-has-pseudo-class/">:has() longer read</a> van Jen Simmons</li> -->
+          <!-- <li><a href="https://www.smashingmagazine.com/2023/01/level-up-css-skills-has-selector/">:has() advanced</a> van Stephanie Eckles</li> -->
+          <li><a href="https://developer.chrome.com/blog/has-m105/">:has() lijstje met toepassingen</a> van Jhey Tompkins</li>
+          <li><a href="https://www.matuzo.at/blog/2022/100daysof-day16/">:has() specificity</a> van Manuel Matuzović</li>
+          <li><a href="https://www.matuzo.at/blog/2022/100daysof-day50/">:has(:not()) vs. :not(:has())</a> van Manuel Matuzović</li>
+        </ul>
+
+        <h4>Schetsen</h4>
+        <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
+        <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
+
+      </div>
+    </details>
+
+
+    <!--Container queries-->
+    <details id="sessie-cqs">
+      <summary aria-label="meer over container queries"><h3>Container queries</h3>
+        <p>De <strong>afmetingen van een element</strong> gebruiken om de lay-out, maten of andere <strong>properties van de kinderen</strong> te <strong>wijzigen</strong>.</p>
+      </summary>
+
+      <div class="details-content">
+
+        <h4>Oefenen</h4>
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/GgRvOmq">Container queries basics</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/wBvqrQM">Container queries basics</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Sample: <a href="https://codepen.io/shooft/pen/NPWvwgv">Media & Container queries samen</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/ogNeoeN">Container queries layout en units</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/QwWMOgO">Container queries layout en units</a> (CodePen)
+          </li>
+        </ul>
+
+
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://www.joshwcomeau.com/css/container-queries-introduction/">A Friendly Introduction to Container Queries</a> van Josh Comeau</li>
+          <li><a href="https://ishadeed.com/article/container-query-units/">CSS Container Query Units</a> van Ahmad Shadeed</li>
+          <li><a href="https://moderncss.dev/container-query-units-and-fluid-typography/">Container Query Units and Fluid Typography</a> van Stephanie Eckles</li>
+        </ul>
+
+        <h4>Schetsen</h4>
+        <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
+        <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
+
+      </div>
+    </details>
+
+
+    <!--Modes (style queries)-->
+    <details id="sessie-modes">
+      <summary aria-label="meer over container style queries"><h3>Modes (style queries)</h3>
+        <p><strong>Container style queries</strong> in combinatie met <strong>:has()</strong> en <strong>custom properties</strong> zouden weleens heel fijn kunnen worden. Voor nu alleen in Chromium :(</p>
+      </summary>
+
+      <div class="details-content">
+
+        <h4>Oefenen</h4>
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/OJGNKJz">Modes met :has()</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/poByXmx">Modes met :has()</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/NWmNQWz">Modes met style queries</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/ZEZOMQP">Modes met style queries</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/bGJpXBj">Modes met style queries met named containers</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/gOyrVrX">Modes met style queries met named containers</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/yLrOmxL">Modes met style queries met and/or</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/gOyrVgv">Modes met style queries met and/or</a> (CodePen)
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            Meetypen: <a href="https://codepen.io/shooft/pen/XWQKWjP">Modes met style queries voor color themes</a> (CodePen)
+          </li>
+          <li>
+            Uitwerking: <a href="https://codepen.io/shooft/pen/jORqgdg">Modes met style queries voor color themes</a> (CodePen)
+          </li>
+        </ul>
+
+
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://www.matuzo.at/blog/2023/100daysof-day80">Intro container style queries</a> van Manuel Matuzović</li>
+          <li><a href="https://ishadeed.com/article/css-container-style-queries/#introducing-style-queries">All About CSS Style Queries</a> van Ahmad Shadeed</li>
+          <li><a href="https://css.oddbird.net/rwd/style/explainer/">CSS Style Query Explainer</a> van Miriam Suzanne</li>
+        </ul>
+
+        <ul>
+          <li><a href="https://lea.verou.me/blog/2020/10/the-var-space-hack-to-toggle-multiple-values-with-one-custom-property/">The Space Toggle Hack voor Modes </a> van Lea Verou (hacky en lelijk)</li>
+        </ul>
+
+        <h4>Schetsen</h4>
+        <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
+        <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
+
+      </div>
+    </details>
+    
+    
+    <!--Filters & Masks-->
+    <details id="sessie-filters-and-masks">
+      <summary aria-label="meer over filters & masks"><h3>Filters & Masks</h3>
+        <p><strong>Visuele effecten</strong> toevoegen aan elementen. De effecten zijn ook goed te <strong>combineren</strong>. Nb. <strong>Wel zwaar</strong> voor je computer :-(</p>
+      </summary>
+
+      <div class="details-content">
+
+        <h4>Oefenen</h4>
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/xxPQyEj">Filter basics</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/LYOXjRL">Filter basics</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/eYeQPWe">Backdrop-filter</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/Rwjqgpo">Backdrop-filter</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/LYOXgLX">Icons verkleuren met filters</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/rNYQyKj">Icons verkleuren met filters</a> (CodePen)</li>
+        </ul>
+        
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/WNXYayR">Mask basics</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/gOXQGdP">Mask basics</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/podQQpx">Moving masks</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/MWOzzrZ">Moving masks</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/gOXQBBa">Gat met een masks</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/rNYQdjR">Gat met een masks</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/yLPQvoo">Radial beams mask</a> (CodePen)</li>
+        </ul>
+        
+
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">Filter basics</a> (MDN)</li>
+          <li><a href="https://css-tricks.com/solved-with-css-colorizing-svg-backgrounds/">Icons verkleuren met filters</a> (CSS tricks)</li>
+          <li><a href="https://codepen.io/sosuke/live/Pjoqqp">CSS filter generator to convert from black to target hex color</a></li>
+          <li><a href="https://www.smashingmagazine.com/2021/07/hsl-colors-css/">HSL color wheel (and more)</a> (Smashing)</li>
+        </ul>
+
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mask">Mask basics</a> (MDN)</li>
+          <li><a href="https://css-tricks.com/mask-compositing-the-crash-course/">Mask Compositing: The Crash Course</a> (CSS tricks)</li>
+          <li><a href="https://css-tricks.com/css-ing-candy-ghost-buttons/">Mask-ing Candy Ghost Buttons</a> (CSS tricks)</li>
+        </ul>
+
+        <ul>
+          <li><a href="https://css-tricks.com/using-property-for-css-custom-properties/">Using @property for CSS Custom Properties</a> (CSS tricks)</li>
+        </ul>
+
+        <h4>Schetsen</h4>
+        <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
+        <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
+
+      </div>
+    </details>
+
+    
+    <!--Gradients-->
+    <details id="sessie-gradients">
+      <summary aria-label="meer over Gradients"><h3>Gradients</h3>
+        <p>De 6 gradients: <strong>linear</strong>, <strong>repeating-linear</strong>, <strong>radial</strong>, <strong>repeating-radial</strong>, <strong>conic</strong>, <strong>repeating-conic</strong> en dan <strong>combineren</strong> maar.</p>
+      </summary>
+
+      <div class="details-content">
+
+        <h4>Oefenen</h4>
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/RwogNqx">De 6 gradients</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/YzpVjOw">De 6 gradients</a> (CodePen)</li>
+        </ul>
+        
+        <ul>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/vYymqmY">Background-position percentages</a> (CodePen)</li>
+        </ul>
+        
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/mdOwyjp">Spinning rainbow</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/MWEOGBL">Spinning rainbow met mask</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/ZEBBBZP">Spinning rainbow met shared background</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/yLVbmXr">Spinning rainbow met SVG filters</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/zYozxRG">Gedeeld verloop</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/PobjYox">Gedeeld verloop</a> (CodePen)</li>
+        </ul>
+
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://css-tricks.com/css3-gradients/">Gradients - The basics</a> (CSS tricks)</li>
+          <li><a href="https://css-tricks.com/i-like-how-percentage-background-position-works/">I like how percentage background-position works</a> (CSS Tricks)</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Using_multiple_backgrounds">Using multiple backgrounds</a> (MDN)</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images">Sizing background images with background-size</a> (MDN)</li>
+          <li><a href="https://projects.verou.me/css3patterns/">Lea's pattern gallery</a> (Lea Verou)</li>
+          <li><a href="https://css-houdini.rocks/animating-gradient/">Animating a gradient
+  met Houdini</a> (CSS Houdini)</li>
+        </ul>
+
+        <ul>
+          <li>Minder bekende properties <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment">background-attachment</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip">background-clip</a> en <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin">background-origin</a> (MDN)</li>
+        </ul>
+
+        <h4>Schetsen</h4>
+        <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
+        <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
+
+      </div>
+    </details>
+    
+    
+    <!--SVG filters-->
+    <details id="sessie-svgfilters">
+      <summary aria-label="meer over SVG filters"><h3>SVG filters</h3>
+        <p>Van <strong>CSS</strong> filters <strong>als shortcuts</strong> tot SMIL in een van de <strong>17 FE's</strong> (filter effects).</p>
+      </summary>
+
+      <div class="details-content">
+
+        <h4>Oefenen</h4>
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/LYbyrQB">SVG filter basics</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/eYBWjWj">SVG filter basics</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/YzpVPXV">Outlined text</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/zYoZRRj">Outlined text</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/MWbmgjJ">Blobby</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/wvoJmxy">Blobby</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/ZEBKEXq">Squiggly tekst</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/MWbmWEq">Squiggly tekst</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/YzpVQJq">Squiggly vormpjes met ogen</a> (CodePen)</li>
+        </ul>
+
+        
+
+        <h4>Samples</h4>
+        <ul>
+          <li><a href="https://codepen.io/shooft/pen/ZEBeoOE">Noisy buttons (SMIL) - JS trigger 🤨</a> (CodePen)</li>
+          <li><a href="https://codepen.io/shooft/pen/zYXGpmj">Hightlight one color</a></li>
+          <li><a href="https://www.sinds1971.nl/lava/">Lava</a> (sinds1971)</li>
+        </ul>
+
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://yoksel.github.io/svg-filters/#/">SVG filters - visueel op een rijtje</a> (yoksel)</li>
+          <li><a href="https://tympanus.net/codrops/2019/01/15/svg-filters-101/"> SVG Filters 101</a> (Codrops)</li>
+          <li><a href="https://css-tricks.com/gooey-effect/"> The Gooey Effect</a> (CSS tricks)</li>
+          <li><a href="https://tympanus.net/codrops/2019/01/22/svg-filter-effects-outline-text-with-femorphology/">Outline Text with &lt;feMorphology&gt;</a> (Codrops)</li>
+          <li><a href="https://tympanus.net/codrops/2019/02/19/svg-filter-effects-creating-texture-with-feturbulence/"> Creating Texture with &lt;feTurbulence&gt;</a> (Codrops)</li>
+          <li><a href="https://css-tricks.com/guide-svg-animations-smil/"> A Guide to SVG Animations (SMIL)</a> (CSS tricks)</li>
+          <li><a href="https://www.sarasoueidan.com/blog/svg-coordinate-systems/">Understanding SVG Coordinate Systems</a> (Sara Soueidan)</li>
+        </ul>
+
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">CSS filter:</a> (MDN)</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter">SVG &lt;filter&gt;</a> (MDN)</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element#filter_primitive_elements">Filter primitive elements</a> (MDN)</li>
+        </ul>
+
+        <h4>Schetsen</h4>
+        <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
+        <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
+        
+      </div>
+    </details>
+
+
+    <!--Custom properties-->
+    <details id="sessie-customproperties">
+      <summary aria-label="meer over Custom properties"><h3>Custom properties</h3>
+        <p>Van <strong>themes</strong> via (complexe) <strong>berekeningen</strong> en <strong>logica</strong> richting <strong>Houdini</strong>.</p>
+      </summary>
+
+      <div class="details-content">
+
+        <h4>Oefenen</h4>
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/eYBWzLx">Button states</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/abBWNaK">Button states</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/rNWmMWN">Stralenkrans</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/zYoNWRY">Stralenkrans</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/xxPmLbZ">Animatie met index</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/OJOrgqO">Animatie met index</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/zYowKdr">Menuutje</a> (CodePen)</li>
+        </ul>
+
+        
+
+        <h4>Samples</h4>
+        <ul>
+          <li><a href="https://codepen.io/shooft/pen/MWbJXwo">Neon buttons</a> (CodePen)</li>
+          <li><a href="https://sinds1971.nl/fed/joann/">Emoji fontein met parameters</a> (sinds1971)</li>
+          <li><a href="https://sinds1971.nl/fvd/rondje/">Carrousel met parameters</a> (sinds1971)</li>
+          <li><a href="https://www.sinds1971.nl/fed/lava/">Lava</a> (sinds1971)</li>
+        </ul>
+
+        <h4>Links</h4>
+        <ul>
+          <li><a href="">CSS Variables: var(--subtitle);</a> (Lea Verou - video)</li>
+        </ul>
+        <ul>          
+          <li><a href="https://medium.com/better-programming/introduction-to-css-custom-properties-66b9474d3012">Custom properties: An introduction</a> (Better Programming)</li>
+          <li><a href="https://css-tricks.com/using-custom-property-stacks-to-tame-the-cascade/">Using Custom Property “Stacks” to Tame the Cascade (fallbacks)</a> (CSS tricks)</li>
+          <li><a href="https://stuffandnonsense.co.uk/blog/redesigning-your-product-and-website-for-dark-mode">Ook gewoon handig voor themes</a> (Stuff & Nonsense)</li>
+          <li><a href="https://css-tricks.com/a-complete-guide-to-calc-in-css/">calc() - the complete guide</a> (CSS tricks)</li>
+          <li><a href="https://css-houdini.rocks/animating-gradient/">Animating a gradient with Houdini</a> (CSS Houdini rocks)</li>
+          <li><a href="https://stuffandnonsense.co.uk/archives/css_specificity_wars.html">CSS Specificity Wars - welke selector wint</a> (Stuff & Nonsense)</li>
+        </ul>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">Using CSS custom properties - including set/get with JS</a> (MDN)</li>
+        </ul>
+
+        <h4>Schetsen</h4>
+        <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
+        <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
+
+      </div>
+    </details>
+
+    <!--Vormpjes maken-->
+    <details id="sessie-vormpjesmaken">
+      <summary aria-label="meer over vormpjes maken"><h3>Vormpjes maken</h3>
+        <p><strong>Border-radius</strong>, <strong>gradients</strong>, <strong>before & after</strong> en <strong>clip-path</strong> en die dan slim <strong>combineren</strong>.</p>
+      </summary>
+
+      <div class="details-content">
+
+        <h4>Oefenen</h4>
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/zYoKGMY">Border-radius heeft 8 values</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/dyOXrpZ">Border-radius heeft 8 values</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/qBqNaeB">Hoekjes maken met gradients</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/xxREGoV">Hoekjes maken met gradients</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/ZEBpQaa">Before en after styling</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/xxROeKW">Before en after styling</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/jOVMqEY">Clip-path cookie-cutter</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/zYoBXzj">Clip-path cookie-cutter</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/yLVaJVB">Vormpjes met ogen</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/oNYzxyL">Vormpjes met ogen</a> (CodePen)</li>
+        </ul>
+
+        <h4>Samples</h4>
+        <ul>
+          <li><a href="https://codepen.io/shooft/pen/NWbNdON">Vormpjes met ogen - alles</a> (CodePen)</li>
+          <li>Meer geknutsel met <a href="https://www.sinds1971.nl/cssvoordedames/3-transforms.html">transforms</a> en <a href="https://www.sinds1971.nl/cssvoordedames/4-positioneren.html">positioneren</a> (sinds1971)</li>
+        </ul>
+
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://css-tricks.com/the-shapes-of-css/">The Shapes of CSS</a> (CSS tricks - her-en-der outdated)</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius">Border-radius heeft 8 values</a> (MDN)</li>
+          <li><a href="https://9elements.github.io/fancy-border-radius/">Fancy Border-Radius</a> (Nils Binder)</li>
+          <li><a href="https://ishadeed.com/article/css-multiple-backgrounds/">Understanding CSS Multiple Backgrounds</a> (Ahmad Shadeed)</li>
+          <li><a href="https://9elements.com/blog/gradient-angles-in-css/">Gradient angles in CSS</a> (Nils Binder)</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min()">min()</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max()">max()</a> en <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()">clamp()</a> (op MDN)</li>
+          <li><a href="https://tiffanybbrown.com/2015/09/css-stacking-contexts-wtf/">CSS stacking contexts: What they are and how they work</a> (Tiffany B. Brown)</li>
+          <li><a href="https://ishadeed.com/article/clip-path/">Understanding Clip Path in CSS</a> (Ahmad Shadeed)</li>
+          <li><a href="https://bennettfeely.com/clippy/">Clippy - a clip-path polygon() maker</a> (Bennett Feely)</li>
+          <li><a href="https://css-tricks.com/svg-path-syntax-illustrated-guide/">The SVG `path` Syntax: An Illustrated Guide</a> (CSS tricks)</li>
+          <li><a href="https://mavo.io/demos/svgpath/">SVG path builder</a> (Lea Verou)</li>
+          <li><a href="https://cssfordesigners.com/articles/clip-path-scaling">Clip-path scaling</a> (CSS for Designers)</li>
+        </ul>
+
+        <h4>Schetsen</h4>
+        <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
+        <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
+
+      </div>
+    </details>
+    
+    <!--3D Transforms-->
+    <details id="sessie-3dtransforms">
+      <summary aria-label="meer over 3D transforms">
+        <h3>(3D) Transforms</h3>
+        <p><strong>Translate</strong>, <strong>rotate</strong>, <strong>origin</strong>, <strong>perspective</strong> en <strong>backface</strong> en die dan slim <strong>combineren</strong>.</p>
+      </summary>
+
+      <div class="details-content">
+
+        <h4>Oefenen</h4>
+        <ul>
+          <li>Startpunt: <a href="https://codepen.io/shooft/pen/eYBdOBx">De 4 transform functies</a> (Codepen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/OJGNxmL">3D basics</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/PogNKdx">3D basics</a> (CodePen)</li>
+        </ul>
+        
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/PobGYyE">Transform sommetjes</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/BaQLLJj">Transform sommetjes</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/KKNgWzg">Transform minecraft</a> (CodePen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/BaQLpQq">Transform minecraft</a> (CodePen)</li>
+        </ul>
+
+        <h4>Samples</h4>
+        <ul>
+          <li><a href="https://codepen.io/shooft/pen/WNowaqB">Backface-visibility flip</a> (CodePen)</li>
+          <li><a href="https://codepen.io/shooft/pen/OJbNqmY">3D vouwmenu 🌶</a> (CodePen)</li>
+          <li><a href="https://codepen.io/shooft/pen/ZEBWwQZ">Flipperdeflip 🌶🌶</a> (CodePen)</li>
+        </ul>
+
+        <ul>
+          <li><a href="https://www.sinds1971.nl/spelenmetcss/2020-feb/pip/index.html">Perspective-origin bedienen met pijltjes</a> (Pip)</li>
+          <li>Meer geknutsel met <a href="https://www.sinds1971.nl/cssvoordedames/4-positioneren.html">positioneren</a> en <a href="https://www.sinds1971.nl/cssvoordedames/11-alles-tesaam.html">alles samen</a> (sinds1971)</li>
+        </ul>
+
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms">CSS Transforms - spec</a> (MDN)</li>
+          <li><a href="https://riptutorial.com/css/example/4130/multiple-transforms">Multiple transforms - Order matters (rip tutorial)</a></li>
+          <li><a href="https://css-tricks.com/things-watch-working-css-3d/">Things to Watch Out for When Working with CSS 3D</a> (Ana Tudor)</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backface-visibility">Backface-visibility</a> (MDN)</li>
+        </ul>
+
+        <h4>Schetsen</h4>
+        <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
+        <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
+        
+      </div>
+    </details>
+
+
+    <!--Animeren-->
+    <details id="sessie-animeren">
+      <summary aria-label="meer over animeren">
+        <h3>Animeren</h3>
+        <p>Van eenvoudige from-to <strong>keyframes</strong> tot complexe meervoudige cubic-beziers.</p>
+      </summary>
+
+      <div class="details-content">
+
+        <h4>Redenen om te animeren (<a href="https://valhead.com/">Val Head</a>):</h4>
+        <ul>
+          <li><strong>Relaties tussen elementen leggen. </strong>Bijv: een filter dat in- en uitschuift zodat je weet hoe 'de wereld' in elkaar zit en samenhangt.</li>
+          <li><strong>Aandacht op iets vestiging.</strong> Bijv. nieuwe content na een refresh met een animatie toevoegen aan een pagina, zodat het even het focuspunt wordt.</li>
+          <li><strong>Feedback geven.</strong> Bijv. een winkelwagentje even groter laten worden als er een product wordt toegevoegd, zodat duidelijk is dat het toevoegen gelukt is en waar het product is terug te vinden.</li>
+          <li><strong>Iets uitleggen.</strong> Bijv. gebruikers de eerste keer een animatie van een gesture tonen, zodat ze weten hoe de interactie werkt.</li>
+          <li><strong>Het merk karakter geven.</strong> De branding ook smoel geven met de wijze van animeren.</li>
+        </ul>
+
+        <h4>Oefenen</h4>
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/poNEPRK">Animatie sommetjes</a> (Codepen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/eYBdvey">Animatie sommetjes</a> (Codepen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/mdOrmaM">Happy knife</a> (Codepen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/RwoGVBp">Happy knife</a> (Codepen)</li>
+        </ul>
+
+        <h4>Samples</h4>
+        <ul>
+          <li><a href="https://www.sinds1971.nl/cssvoordedames/8-animations.html">Sanne's experimentjes</a> (sinds1971)</li>
+          <li><a href="https://codepen.io/shooft/pen/NWbNdON">Vormpjes met ogen - alles</a> (CodePen)</li>
+          <li><a href="https://codepen.io/shooft/pen/ZEBBBZP">Draaiende regenboog</a> (Codepen)</li>
+        </ul>
+
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://ohmy.disney.com/movies/2016/07/20/twelve-principles-animation-disney/">12 Principles of Animation</a> (Disney)</li>
+          <li><a href="https://vimeo.com/250349313 ">Designing Meaningful Animation</a> (Val Head - Video)</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations">CSS Animations - spec</a> (MDN)</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">CSS properties that can be animated using CSS Animations or CSS Transitions</a> (MDN)</li>
+          <li><a href="https://valhead.com/2020/05/09/reduced-motion-in-the-wild/">Reduced Motion 'In The Wild'</a> (Val Head)</li>
+          <li><a href="https://matthewlein.com/tools/ceaser">CSS Easing Animation Tool</a> (Matthew Lein)</li>
+          <li><a href="https://css-tricks.com/snippets/svg/curved-text-along-path/">Curved Text Along a Path</a> (CSS Tricks)</li>
+        </ul>
+
+        <h4>Schetsen</h4>
+        <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
+        <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
+        
+      </div>
+    </details>
+
+
+    <!--Wiskunde/Math-->
+    <details id="sessie-math">
+      <summary aria-label="meer over wiskunde/math">
+        <h3>Wiskunde/Math</h3>
+        <p>Naast <strong>calc, min, max en clamp</strong> nu nog <strong>veel meer wiskunde</strong> :)</p>
+      </summary>
+
+      <div class="details-content">
+
+        <h4>Oefenen</h4>
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/LYvbMOP">Vierkant met <strong>wortel</strong></a> (Codepen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/PogbdbG">Vierkant met <strong>wortel</strong></a> (Codepen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/BaEQvJZ">Magnification</a> (Codepen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/rNbWZJP">Magnification met <strong>cos</strong></a> (Codepen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/LYvbJaG">Magnification met <strong>sin</strong> en <strong>abs</strong></a> (Codepen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/KKYNbQR">Zeshoek met <strong>sin</strong> en <strong>cos</strong></a> (Codepen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/abxBRyZ">Zeshoek met <strong>sin</strong> en <strong>cos</strong></a> (Codepen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/yLrVGEx">Pythagoras met <strong>hypot</strong></a> (Codepen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/eYoBQRR">Pythagoras met <strong>hypot</strong></a> (Codepen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/wvZoRNp">Output met <strong>round</strong> en <strong>mod</strong></a> (Codepen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/qBwqLWg">Output met <strong>round</strong> en <strong>mod</strong></a> (Codepen)</li>
+        </ul>
+
+
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions#math_functions">Alle Math functions op een rij</a> (MDN)</li>
+        </ul>
+
+
+        <h4>Schetsen</h4>
+        <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
+        <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
+
+      </div>
+    </details>
+    
+    
+    <!--Cursor volgen-->
+    <details id="sessie-cursor-volgen">
+      <summary aria-label="meer over cursor volgen">
+        <h3>Cursor volgen</h3>
+        <p>De <strong>cursor volgen</strong> met <strong>custom properties</strong> en een <strong>beetje JS</strong>. Dank aan <a href="https://lea.verou.me/">Lea</a></p>
+      </summary>
+
+      <div class="details-content">
+
+        <h4>Oefenen</h4>
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/NWwEOQg">Volg die muis - de basics</a> (Codepen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/GROwdqd">Volg die muis - de basics</a> (Codepen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/gOXQQbw">Where's Waldo</a> (Codepen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/PoOxeeV">Where's Waldo</a> (Codepen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/oNoQQbN">Color map</a> (Codepen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/PoOxegv">Color map</a> (Codepen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/JjOeeRg">Volg die muisjes</a> (Codepen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/RwjqBLK">Volg die muisjes</a> (Codepen)</li>
+        </ul>
+
+        <ul>
+          <li>Meetypen: <a href="https://codepen.io/shooft/pen/dyZQQzG">Button bubbles</a> (Codepen)</li>
+          <li>Uitwerking: <a href="https://codepen.io/shooft/pen/YzERjmQ">Button bubbles</a> (Codepen)</li>
+        </ul>
+
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event">mousemove event</a> (MDN)</li>
+          
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect">Element.getBoundingClientRect()</a> (MDN)</li>
+          
+          <li><a href="https://css-tricks.com/using-property-for-css-custom-properties/">Using @property for CSS Custom Properties</a> (CSS tricks)</li>
+        </ul>
+
+
+        <h4>Schetsen</h4>
+        <p>Ik maak veel schetsjes - om te ontwerpen - en om techniek uit te vogelen:</p>
+        <p><img src="img/schets-worst-mes-pan.jpg" alt="worst, mes en pan in wording"></p>
+
+      </div>
+    </details>
+    
+
+  </main>
+  
+  <script src="scripts/script.js"></script>
+</body>
+</html>
